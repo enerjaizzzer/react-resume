@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.header {
+  display: flex;
+  padding: 10px 50px;
+  background: @second-background;
+  box-shadow: @shadow-standard;
+
+  &__tittle {
+    font: @title-font;
+    transition: 0.3s;
+
+    &_red {
+      color: @red;
+    }
+
+    &_blue {
+      color: @main-color;
+    }
+
+    &_green {
+      color: @green;
+    }
+
+    &_yellow {
+      color: @yellow;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  top: calc(50vh - 100px);
+  position: fixed;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: @second-background;
+    box-shadow: @shadow-standard;
+    margin: 2px 0;
+    border-radius: @border-radius-base;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+
+    &:hover {
+      width: 60px;
+      box-shadow: @shadow-big;
+    }
+
+    &_active {
+      width: 60px;
+      box-shadow: @shadow-big;
+    }
+
+    &_red {
+      svg {
+        fill: @red;
+      }
+    }
+
+    &_blue {
+      svg {
+        fill: @main-color;
+      }
+    }
+
+    &_green {
+      svg {
+        fill: @green;
+      }
+    }
+
+    &_yellow {
+      svg {
+        fill: @yellow;
+      }
+    }
+  }
+}

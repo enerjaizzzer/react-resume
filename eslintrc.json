@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-cycle": "off",
+    "import/no-unresolved": "off",
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": [true, { "allow": "single-child" }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "src/**"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

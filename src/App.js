@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import './App.less';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    activeTab: 'About',
+    mainColor: 'blue'
+  }
+
+  changeActiveTab = (item) => {
+    this.setState({
+      activeTab: item.value,
+      mainColor: item.color,
+    })
+  }
+
+  render() {
+    const { activeTab, mainColor } = this.state;
+    return (
+      <div className="resume">
+        <Header
+          mainColor={mainColor}
+        />
+        <Sidebar
+          activeTab={activeTab}
+          mainColor={mainColor}
+          changeActiveTab={this.changeActiveTab}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
