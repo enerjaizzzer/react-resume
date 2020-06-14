@@ -38,7 +38,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592113278306</updated>
-      <workItem from="1592113279864" duration="619000" />
+      <workItem from="1592113279864" duration="1298000" />
     </task>
     <servers />
   </component>
@@ -46,6 +46,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="551" y="252" key="Vcs.Push.Dialog.v2" timestamp="1592114465327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="551" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592114465327" />
     <state x="667" y="101" width="585" height="837" key="find.popup" timestamp="1592113702778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
